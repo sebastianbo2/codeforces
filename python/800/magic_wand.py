@@ -1,3 +1,5 @@
+# problem : https://codeforces.com/problemset/problem/2167/C
+
 for i in range(int(input())):
     input()
     nums = list(map(int, input().split(" ")))

@@ -1,3 +1,5 @@
+# problem : https://codeforces.com/problemset/problem/1374/C
+
 for t in range(int(input())):
 
     length = int(input())

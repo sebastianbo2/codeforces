@@ -1,3 +1,5 @@
+# problem : https://codeforces.com/problemset/problem/500/A
+
 m = input().split(" ")
 i = int(m[1])
 

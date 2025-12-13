@@ -2,6 +2,8 @@
 # As soon as one of them is impossible, we know the answer is NO
 # If no impossible ones were found we know the answer is YES
 
+# problem : https://codeforces.com/problemset/problem/2094/D
+
 for t in range(int(input())):
 
     s = input()

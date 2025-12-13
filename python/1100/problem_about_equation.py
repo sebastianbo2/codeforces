@@ -1,3 +1,5 @@
+# problem : https://codeforces.com/problemset/problem/174/A
+
 inp = input().split(" ")
 
 n, b = int(inp[0]), int(inp[1])

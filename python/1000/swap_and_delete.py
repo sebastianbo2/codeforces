@@ -1,4 +1,4 @@
-
+# problem : https://codeforces.com/problemset/problem/1913/B
 
 for t in range(int(input())):
 

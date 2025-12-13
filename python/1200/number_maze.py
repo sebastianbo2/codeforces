@@ -3,6 +3,8 @@
 # You check if two characters are equal, and if not you check if they are elsewhere (to add them to B count)
 # very simple problem
 
+# problem : https://codeforces.com/problemset/problem/2172/E
+
 perms = [
     ['12', '21'],
     ['123', '132', '213', '231', '312', '321'],
