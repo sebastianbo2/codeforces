@@ -1,4 +1,5 @@
 # problem : https://codeforces.com/problemset/problem/1999/B
+# brute force by testing both possibilties: if one possbility can occur the reverse possibility can occur aswell so + 2
 
 for t in range(int(input())):
     cards = list(map(int, input().split(" ")))
