@@ -2,4 +2,4 @@
 
 sorted by difficulty
 
-some (not all) problems are explained at the top of the code
+most problems are explained at the top of the code
