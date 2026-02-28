@@ -1,5 +1,6 @@
 # problem : https://codeforces.com/contest/2091/problem/B
-# sort the array and start from the top : we can eliminate every number above the threshold as a solo grup and
+
+# sort the array and start from the top : we can eliminate every number above the threshold as a solo group and
 # once we hit small numbers we keep going till a group is filled and save that and keep going until no more valid groups can be made
 
 for t in range(int(input())):

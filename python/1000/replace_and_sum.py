@@ -1,3 +1,9 @@
+# problem : https://codeforces.com/problemset/problem/2193/C
+
+# Since there is an unlimited amount of operations we can apply, we can always maximize a value at an index i based on the highest value above it (in either array)
+# We keep track of the highest number to the right at every position and construct an array of this
+# Then, we build an array of sums so that we can do the "integral"/sum trick xd (sum[b] - sum[a] gives sum from a to b)
+
 for t in range(int(input())):
     n, q = map(int, input().split(" "))
     anums = list(map(int, input().split(" ")))

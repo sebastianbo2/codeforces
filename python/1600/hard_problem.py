@@ -1,4 +1,5 @@
 # problem : https://codeforces.com/problemset/problem/706/C
+
 # At every index in the list of strings you can choose to either reverse them or not reverse them
 # Choosing to reverse costs energy and choosing not to doesn't cost anything. However, we must keep the array valid
 # So, if our choice leads to an invalid array we must set the value at a maximum (so that when choosing the best this will be removed as soon as possible)
