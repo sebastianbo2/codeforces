@@ -1,3 +1,8 @@
+# problem : https://codeforces.com/problemset/problem/1791/D
+
+# IDEA : "sliding window" the bounds of set1 and set2 (two dictionarries with counts of each character)
+# the best answer is the maximized sums of unique characters in set1 and set2 
+
 for t in range(int(input())):
 
     n = int(input())
