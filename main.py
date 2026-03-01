@@ -1,35 +1,20 @@
 for t in range(int(input())):
-
-    n = int(input())
-    s = input()
-
-    s1 = dict()
-    s2 = dict()
-
-    s1_uniques = 0
-    s2_uniques = 0
-
-    for mo in range(n):
-        if s[mo] not in s1:
-            s1[s[mo]] = 0
-            s1_uniques += 1
-
-        s1[s[mo]] += 1
     
-    best = s1_uniques
+    n, k, q = map(int, input().split(" "))
+    nums = list(map(int, input().split(" ")))
+
+    sum = 0
+    before = 0
 
     for i in range(n):
-        s1[s[i]] -= 1
-
-        if s1[s[i]] <= 0:
-            s1_uniques -= 1
-        
-        if s[i] not in s2:
-            s2[s[i]] = 0
-            s2_uniques += 1
-        
-        s2[s[i]] += 1
-        
-        best = max(best, s1_uniques + s2_uniques)
+        if nums[i] <= q:
+            before += 1
+        else:
+            if before >= k:
+                sum += (before - k + 1) * (before - k + 2) // 2
+            before = 0
     
-    print(best)
+    if before >= k:
+        sum += (before - k + 1) * (before - k + 2) // 2
+
+    print(sum)
