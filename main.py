@@ -1,20 +1,29 @@
 for t in range(int(input())):
+
+    n, k = map(int, input().split(" "))
+    s = input()
+
+    c = 0
+
+    for g in range(k):
+        if s[g] == "W":
+            c += 1
     
-    n, k, q = map(int, input().split(" "))
-    nums = list(map(int, input().split(" ")))
+    l, r = 0, k - 1
 
-    sum = 0
-    before = 0
+    best = c
 
-    for i in range(n):
-        if nums[i] <= q:
-            before += 1
-        else:
-            if before >= k:
-                sum += (before - k + 1) * (before - k + 2) // 2
-            before = 0
-    
-    if before >= k:
-        sum += (before - k + 1) * (before - k + 2) // 2
+    while (r < n - 1):
+        r += 1
 
-    print(sum)
+        if s[r] == "W":
+            c += 1
+        
+        if s[l] == "W":
+            c -= 1
+        
+        l += 1
+
+        best = min(best, c)
+
+    print(best)
