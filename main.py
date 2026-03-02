@@ -1,9 +1,3 @@
-import math
+n, a, b = map(int, input().split(" "))
 
-for t in range(int(input())):
-
-    n, k = map(int, input().split(" "))
-
-    k *= math.ceil(n / k)
-
-    print(math.ceil(k / n))
+print(b + 1 if b + 1 <= n - a else n - a)
